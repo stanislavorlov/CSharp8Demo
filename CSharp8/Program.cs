@@ -8,11 +8,14 @@ namespace CSharp8
     {
         static void Main(string[] args)
         {
-            AttributesOrProperties myClass = new AttributesOrProperties();
-            Console.WriteLine(myClass);
+            //0. Attributes on Properties
+            AttributesOnProperties.Run();
 
-            Type myType = typeof(AttributesOrProperties);
-            PropertyInfo property = myType.GetProperty("CSharp7");
+            //1. Readonly members
+            ReadonlyMembers.Run();
+
+            //2. Default interface methods
+            DefaultInterfaceMethods.Run();
         }
     }
 }
