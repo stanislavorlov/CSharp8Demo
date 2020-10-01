@@ -26,7 +26,7 @@
             DisposableRefStructs.Run();
 
             //7. Nullable Reference Types
-            //NullableReferenceTypes.Run();
+            NullableReferenceTypes.Run();
 
             //8. Asynchronous streams
             AsynchronousStreams.Run();
