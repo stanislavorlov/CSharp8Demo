@@ -1,12 +1,8 @@
-﻿using System;
-using System.Reflection;
-using CSharp8;
-
-namespace CSharp8
+﻿namespace CSharp8
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //0. Attributes on Properties
             AttributesOnProperties.Run();
@@ -30,7 +26,25 @@ namespace CSharp8
             DisposableRefStructs.Run();
 
             //7. Nullable Reference Types
-            NullableReferenceTypes.Run();
+            //NullableReferenceTypes.Run();
+
+            //8. Asynchronous streams
+            AsynchronousStreams.Run();
+
+            //9. Asynchronous disposable
+            AsynchronousDisposable.Run();
+
+            //10. Indeces And Ranges
+            IndecesAndRanges.Run();
+
+            //11. Null-coalescing assignment
+            NullCoalescingAssignment.Run();
+
+            //12. Nested Stackalloc
+            NestedStackalloc.Run();
+
+            //13. Enhancement of interpolated verbatim strings
+            InterpolatedVerbatimStringsEnhancement.Run();
         }
     }
 }
