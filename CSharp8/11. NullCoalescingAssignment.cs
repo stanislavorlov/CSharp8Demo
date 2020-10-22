@@ -13,8 +13,13 @@ namespace CSharp8
             numbers.Add(i ?? 17);
             numbers.Add(i ?? 20);
         }
+        
+        public void CheckForNull()
+        {
+             _ = param ?? throw new ArgumentNullException(nameof(param));
+        }
 
-        public void CheckForNull(string param)
+        public void AssignIfNull(string param)
         {
             param ??= string.Empty;
 
